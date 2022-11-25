@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	    
+	    <fragment
+	      android:id="@+id/mymap"
+	      android:layout_width="match_parent"
+	      android:layout_height="match_parent"
+	      class="com.google.android.gms.maps.SupportMapFragment"/>
+	    
+	    <LinearLayout
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:layout_gravity="bottom|left"
+	      android:orientation="vertical"
+	      android:background="#000"
+	      android:paddingLeft="5dp"
+	      android:paddingBottom="5dp"
+	      android:paddingRight="5dp">
+	      
+	        <TextView
+	            android:id="@+id/tap_status"
+	            android:padding="2dp"
+                android:text="Tap status"
+                android:textSize="14sp"
+                android:background="#000000"
+                android:textColor="#bbbbbb"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent">
+		    </TextView>
+		    <TextView
+	            android:id="@+id/time"
+	            android:padding="2dp"
+                android:text="Update status"
+                android:textSize="14sp"
+                android:background="#000000"
+                android:textColor="#bbbbbb"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent">
+		    </TextView>
+		    
+	        <LinearLayout
+		      android:layout_width="wrap_content"
+		      android:layout_height="wrap_content"
+		      android:orientation="horizontal"
+		      android:background="#000"
+		      android:paddingTop="5dp">
+		      
+	          <Button
+				android:id="@+id/campus"
+		        android:background="@drawable/nice_button"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@android:color/black"
+		        android:padding="12dp"
+				android:textSize="16sp"
+				android:shadowRadius="1"
+				android:shadowDx="1"
+				android:shadowDy="1"
+				android:shadowColor="@android:color/black"
+		        android:text="Campus" />
+
+	          <TextView
+                android:text="   "
+                android:textSize="12sp"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"></TextView>
+		        
+	          <Button
+				android:id="@+id/update"
+		        android:background="@drawable/nice_button"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@android:color/black"
+				android:textSize="16sp"
+				android:padding="12dp"
+				android:shadowRadius="1"
+				android:shadowDx="1"
+				android:shadowDy="1"
+				android:shadowColor="@android:color/black"
+		        android:text="Tiggy" />
+		        	        
+	        </LinearLayout>
+	    
+	    </LinearLayout>
+	    
+  </FrameLayout>
